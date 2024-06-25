@@ -1,6 +1,6 @@
-body{
-    padding: 100px;
-  }
+body {
+  padding-top: 100px;
+}
 
 h1{
     text-align: center;
@@ -10,15 +10,20 @@ h1{
     padding: 70px;
 }
 
-nav {
+@media only screen and (min-width: 577px) {
+  nav {
     background-color: #333;
-  }
+    top: 0;
+    width: 100%;
+    position: fixed;
+    }
    
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
   }
    
   .nav-item {
@@ -31,10 +36,20 @@ nav {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;}
-.nav-item:active{
+  .nav-item:active{
         background-color: #4CAF50;
         text-decoration-line: underline;
       }
+
+  input[type='checkbox'] {
+  display: none;}
+
+  label {
+  display: none;
+}
+
+
+}
 
 .work {
   display: flex;
@@ -79,4 +94,38 @@ img {
 
 .btn-primary {
   padding-top: 7px;
+}
+
+@media only screen and (max-width: 576px) {
+  /* For mobile phones: */
+  .checkbtn {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    
+   }
+  
+   #check:checked ~ #main-menu {
+    display: block;
+   }
+  
+   nav input[type='checkbox']{
+    display: none;}
+
+  input[type='checkbox']:not(:checked) {
+    display: none;
+    
+ 
+  }
+  nav {
+    background-color: #333;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    }
+
+  nav label {
+  float: right;
+  }
+
 }
