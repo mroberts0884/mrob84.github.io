@@ -1,6 +1,4 @@
-body {
-  padding-top: 100px;
-}
+
 
 h1{
     text-align: center;
@@ -15,7 +13,7 @@ h1{
     background-color: #333;
     top: 0;
     width: 100%;
-    position: fixed;
+    
     }
    
   ul {
@@ -121,7 +119,6 @@ img {
     background-color: #333;
     top: 0;
     width: 100%;
-    position: fixed;
     }
 
   nav label {
