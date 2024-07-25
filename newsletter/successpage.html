@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Success!</title>
+</head>
+<body>
+    <div class="success">
+        <div class="big-checkmark">
+            <img src="assets\images\icon-success.svg" alt="checkmark">
+        </div>
+        <div class="text">
+            <h1>Thanks for subscribing!</h1>
+            <p id="confirmation">A confirmation email has been sent to&nbsp<p id="email"></p> Please open it and click the button inside to confirm your subscription.</p>
+        </div>
+        <div class="close-button">
+            <button class="dismiss" onclick="self.close()">Dismiss message</button>
+        </div>
+    </div>
+    
+    
+    
+   <script>
+    const params = new URLSearchParams(window.location.search);
+    console.log(params.toString());
+    document.getElementById('email').textContent = `${params.get('email')}.`;
+   </script> 
+</body>
+</html>

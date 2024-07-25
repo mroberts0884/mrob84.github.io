@@ -24,13 +24,13 @@
         <li class="checkmark">And much more!</li>
       </ul>
         
-      <form>
+      <form id="submit-email">
         <div class="label-email">
           <label for="email" class="email-label">Email Address  </label>
         </div>
         
         <div class="input-email">
-          <input type="email" id="email" name=""email class="email-input" placeholder="bob@xyzcompany.com"><br>
+          <input type="email" id="email" name="email" class="email-input" placeholder="bob@xyzcompany.com" required><br>
         </div>
         
         <div class="button1">
@@ -45,7 +45,15 @@
       <img src="assets\images\illustration-sign-up-desktop.svg" alt="desktop-img" class="img-desktop">
     </picture>
     
-  
+  <script>
+    document.getElementById('submit-email').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const params = new URLSearchParams(formData).toString();
+            console.log(params);
+            window.location.href = `successpage.html?${params}`;
+        });
+  </script>
 
 
 
