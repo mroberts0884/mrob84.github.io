@@ -5,11 +5,12 @@ body {
   
 }
 
-*,
-::before,
-::after {
-  box-sizing: inherit; 
+body, html {
+  height: 100%;
+  margin: 0;
 }
+
+
 
 html {
   box-sizing: border-box;
@@ -45,25 +46,36 @@ html {
 
 h1{
     text-align: center;
-    margin-top: 1%;
+    margin-top: -10%;
 }
 
 /* contact page */
 
 #contact-form{
     display: flex;
+    
     justify-content: center;
     align-content: center;
+    height: 100vh;
     width: 100%;
+    flex-wrap: nowrap;
 }
 
+
 .contact-info {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   font-weight: bold;
-  padding: 3% 5%;
+  
 }
+
+.col-sm-6 {
+  padding: 2% 0 2% 0
+}
+
+.mb-3 {
+  padding: 2% 0 2% 0;
+}
+
+
 
 .btn-primary {
   background-color: #098be1; 
@@ -78,6 +90,7 @@ h1{
 
 .submit-btn {
   padding-top: 10%;
+  padding-bottom: 25%;
 }
 
 /* navbar */
@@ -92,7 +105,8 @@ nav {
 
 @media only screen and (min-width: 577px) {
   .masthead {
-    
+    padding-bottom: 0;
+    margin-bottom: 0;
     background-color: #177ebe;
   }
 
