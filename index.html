@@ -10,28 +10,15 @@
   
 </head>
 <body>
-  <nav class="hidden-nav">
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fa fa-bars"></i>
-    </label>
-    
-    <ul id="main-menu">
-        <li class="logo">Matt Roberts</li>
-        <li class="nav-item" id="home">
-          <a href="/index.html">Home</a>
-          </li>
-        <li class="nav-item" id="about">
-          <a href="/about-me.html">About</a>
-          </li>
-        <li class="nav-item" id="services">
-          <a href="/work.html">Work</a>
-          </li>
-        <li class="nav-item" id="contact">
-          <a href="/contact.html">Contact</a>
-        </li>
-    </ul>
-  </nav>
+  <div id="nav-placeholder">
+  </div>
+  <script>
+      $.get("nav.html", function(data){
+          $("#nav-placeholder").replaceWith(data)
+      });
+  </script>
+
+  
   
 </body>
 </html>
