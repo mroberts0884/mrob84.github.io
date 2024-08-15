@@ -51,15 +51,20 @@ h1{
 
 /* contact page */
 
+
 #contact-form{
-    display: flex;
-    
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
-    width: 100%;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-evenly;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  margin: auto;
+  
 }
+
+
 
 
 .contact-info {
@@ -67,15 +72,21 @@ h1{
   
 }
 
-.col-sm-6 {
-  padding: 2% 0 2% 0
+.main-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
-.mb-3 {
-  padding: 2% 0 2% 0;
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 5px;
 }
-
-
 
 .btn-primary {
   background-color: #098be1; 
@@ -96,7 +107,7 @@ h1{
 /* navbar */
 nav {
   padding-bottom: 2%;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  
 }
 
 

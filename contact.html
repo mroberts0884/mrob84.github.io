@@ -12,30 +12,31 @@
         });
     </script>
 <h1>Contact Me</h1>
-<div class="container" id="contact-form">
-    <form novalidate>
-        <div class="row">
-            <div class="col-sm-6">
-                <label for="firstName" form-label class="contact-info">First Name</label>
-                <input type="text" class="form-control" id="firstName" 
-                placeholder="Jane" required>
+    <form id="contact-form" novalidate>
+        <div class="container" >
+        
+            <div class="main-info">
+                <div class="col-sm-6">
+                    <label for="firstName" form-label class="contact-info">First Name</label>
+                    <input type="text" class="form-control" id="firstName" 
+                    placeholder="Jane" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="lastName" form-label class="contact-info">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" 
+                    placeholder="Doe" required>
+                </div>  
             </div>
-            <div class="col-sm-6">
-                <label for="lastName" form-label class="contact-info">Last Name</label>
-                <input type="text" class="form-control" id="lastName" 
-                placeholder="Doe" required>
-            </div>  
-        </div>
-        <div class="mb-3">
-            <label for="emailaddress" class="contact-info">Email address</label>
-            <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com" required>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="contact-info">Message</label>
-            <textarea class="form-control" id="message" rows="3"></textarea>
-          </div>
-        <div class="submit-btn">
-            <button class="btn-primary" type="submit">Submit form</button>
+            <div class="main-info">
+                <label for="emailaddress" class="contact-info">Email address</label>
+                <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com" required>
+            </div>
+            <div class="main-info">
+                <label for="message" class="contact-info">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <div class="submit-btn">
+                <button class="btn-primary" type="submit">Submit form</button>
         </div>
     </form>
 </body>
