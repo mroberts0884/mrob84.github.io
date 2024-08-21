@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
     $name = $email = $message = "";
 
@@ -27,3 +28,4 @@
     
     }
 ?>
+</html>
