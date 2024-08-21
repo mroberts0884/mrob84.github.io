@@ -12,21 +12,15 @@
         });
     </script>
 <h1>Contact Me</h1>
-    <form id="contact-form" novalidate>
+    <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <div class="container" >
         
             <div class="main-info">
                 <div class="col-sm-6">
-                    <label for="firstName" form-label class="contact-info">First Name</label>
-                    <input type="text" class="form-control" id="firstName" 
-                    placeholder="Jane" required>
+                    <label for="Name" form-label class="contact-info">Name</label>
+                    <input type="text" class="form-control" id="name" name="name"
+                    placeholder="Jane Doe" required>
                 </div>
-                <div class="col-sm-6">
-                    <label for="lastName" form-label class="contact-info">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" 
-                    placeholder="Doe" required>
-                </div>  
-            </div>
             <div class="main-info">
                 <label for="emailaddress" class="contact-info">Email address</label>
                 <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com" required>
@@ -39,5 +33,6 @@
                 <button class="btn-primary" type="submit">Submit form</button>
         </div>
     </form>
+    <div id="response-message">Thank you</div>
 </body>
 </html>
