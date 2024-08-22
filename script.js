@@ -6,7 +6,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
 
     const formData = new formData(this);
 
-    fetch('form-process.php', {
+    fetch('https://formspree.io/f/mkgwqveo', {
         method: 'POST',
         body: formData
 
