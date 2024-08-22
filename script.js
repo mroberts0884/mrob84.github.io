@@ -13,8 +13,8 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
     })
     .then(response => response.text())
     .then(
-        data => {document.getElementById('response-message').innerHTML = data;
-})
+         alert('Form is submitted.')
+)
     .catch(error => console.error('Error:', error));
 
 })
