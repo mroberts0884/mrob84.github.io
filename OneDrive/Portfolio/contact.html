@@ -1,0 +1,39 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href= 'style.css'>
+</head>
+<body>
+    <div id="nav-placeholder">
+    </div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data)
+        });
+    </script>
+<h1>Contact Me</h1>
+    <form id="contact-form" action="https://formspree.io/f/mkgwqveo" method="POST">
+        <div class="container" >
+        
+            <div class="main-info">
+                <div class="col-sm-6">
+                    <label for="Name" form-label class="contact-info">Name</label>
+                    <input type="text" class="form-control" id="name" name="name"
+                    placeholder="Jane Doe" required>
+                </div>
+            <div class="main-info">
+                <label for="emailaddress" class="contact-info">Email address</label>
+                <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com" required>
+            </div>
+            <div class="main-info">
+                <label for="message" class="contact-info">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <div class="submit-btn">
+                <button class="btn-primary" type="submit">Submit form</button>
+        </div>
+        <div id="response-message">Thank you</div>
+    </form>
+    
+</body>
+</html>
