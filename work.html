@@ -1,0 +1,39 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href= 'style.css'>
+     
+</head>
+<body>
+    <div id="nav-placeholder">
+    </div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data)
+        });
+    </script>
+<h1>My Work</h1>
+
+  <div class="work">
+    <div class="item">
+      <h5 class="title">Login Page</h5>
+      <img src="images\loginpage1.jpeg">
+    </div>
+    <div class="item">
+      <h5 class="title">Checkout Form</h5>
+      <img src="images\Screenshot_28-5-2024_143923_127.0.0.1.jpeg">
+    </div>
+    <div class="item">
+      <h5 class="title">newsletter</h5>
+      <a href="https://newsletter-seven-gold.vercel.app/" target="_blank"><img src="images\newsletter2.jpg" alt="newsletter"></a>
+    </div>
+    <div class="item">
+      <a href="https://newsletter-seven-gold.vercel.app/" target="_blank"><img src="images\newsletter2.jpg" alt="newsletter"></a>
+    </div>
+    
+    
+  </div>
+
+
+</body>
+</html>
