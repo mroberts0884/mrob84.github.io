@@ -97,13 +97,19 @@ h1{
   text-decoration: none;
   display: inline-block;
   font-size: 2vh;
+<<<<<<< HEAD
   cursor: pointer;
+=======
+>>>>>>> 970274a17a45b725612ff6b17ce6d70e210583c6
 }
 
 .submit-btn {
   padding-top: 10%;
   padding-bottom: 25%;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 970274a17a45b725612ff6b17ce6d70e210583c6
 }
 
 /* navbar */
