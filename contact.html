@@ -13,7 +13,7 @@
     </script>
     
 <h1>Contact Me</h1>
-    <form id="contact-form" name="contact-form" action="https://formspree.io/f/mkgwqveo" method="POST" onsubmit="return e()">
+    <form id="contact-form" name="contact-form" action="https://formspree.io/f/mkgwqveo" method="POST" onsubmit="return e()" onclick="reset()">
         <div class="container" >
         
             <div class="main-info">
@@ -32,8 +32,10 @@
             </div>
             <div class="submit-btn">
                 <button class="btn-primary" type="submit">Submit form</button>
+                <button class="btn-primary" type="button" onclick="reset()">Clear form</button>
         </div>
-        <div id="response-message">Thank you</div>
+        
+        
     </form>
     <script src="script.js"></script>
 </body>
