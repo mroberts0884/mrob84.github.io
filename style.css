@@ -49,6 +49,10 @@ h1{
     
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* contact page */
 
 
@@ -113,9 +117,15 @@ nav {
   
 }
 
+.work {
+  display: grid;
+  column-gap: 0.75em;
+}
 
-
-
+.work img {
+  width: 100%;
+  height: auto;
+}
 
 
 @media only screen and (min-width: 577px) {
@@ -183,29 +193,10 @@ nav {
 /*work*/
 
   .work {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1px;
-    padding: 5%;
-    justify-content: center;
-    
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .item {
-      flex: 1 1 calc(25% - 30px);
-      margin: 10%;
-      border-radius: 5px;
-      text-align: center;
-      
-  }
-
-  .work img {
-    width: 100%;
-    height: auto;
-    display: block;
-
-  }
-
+  
   .title {
     padding-bottom: 5%;
   }
@@ -250,10 +241,15 @@ nav {
     padding-top: 7px;
   }
 
+ 
+  
+  
+
 
   
 
 }
+
 
 
 
@@ -326,8 +322,14 @@ nav {
     color: rgb(255, 255, 255);
   }
 
+  /*work*/
 
-
-
+  .work {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  
 }
 
+
+  
