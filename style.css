@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to left, rgb(88, 143, 220) 0%, rgb(88, 143, 220) 25%, rgb(0, 217, 255) 25%, rgb(0, 217, 255) 100%);
+  background-image: linear-gradient(to left, rgb(202, 209, 217, 0.2) 0%, rgba(161, 170, 182, 0.2) 25%, rgb(121, 128, 129, 0.2) 25%, rgb(161, 175, 177, 0.5) 100%);
+  box-shadow: 10px 10px 5px gray;
 }
 
 body, html {
@@ -112,10 +113,32 @@ h1{
 }
 
 /* navbar */
-nav {
-  padding-bottom: 2%;
+
+
+.nav-item:active{
+  font-weight: bold;
   
 }
+
+nav ul li a:hover {
+  font-weight: bold;
+  color: #177ebe;
+}
+
+.active {
+
+color: #177ebe
+}
+
+nav {
+  background-color: #b6bec1;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  
+  }
 
 .work {
   display: grid;
@@ -127,28 +150,26 @@ nav {
   height: auto;
 }
 
+.intro {
+  margin: auto;
+  width: 100%;
+  padding: 5em;
+  font-family: sans-serif;
+  font-size: larger;
+
+}
+
+.intro1 {
+  text-align: center;
+}
+
+
 
 @media only screen and (min-width: 577px) {
 
   /*navbar*/
 
-  .masthead {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    background-color: #177ebe;
-  }
 
-  
-
-  nav {
-    background-color: #fbfeff;
-    top: 0;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    
-    }
    
   ul {
     display: flex;
@@ -168,15 +189,7 @@ nav {
     font-size: 2rem;
     }
   
-  .nav-item:active{
-        font-weight: bold;
-        
-      }
-
-  nav ul li a:hover {
-        font-weight: bold;
-        color: #177ebe;
-      }
+  
 
   .logo {
     margin-left: 2em;
@@ -262,9 +275,12 @@ nav {
   /* For mobile phones: */
   .checkbtn {
     font-size: 1.5rem;
-    color: white;
+    color: black;
     cursor: pointer;
-    
+    right: 0;
+    top: 0;
+    display: block;
+    position: absolute;
    }
   
    #check:checked ~ #main-menu {
@@ -278,10 +294,11 @@ nav {
     display: none;}
     
   nav {
-    background-color: #177ebe;
+    background-color: #f9fbfc;
     top: 0;
     width: 100%;
     position: fixed;
+    z-index: 1000; /* Ensure it's on top of other content */
     
     }
 
@@ -290,15 +307,19 @@ nav {
   }
 
   .nav-item a {
+    margin-right: 2em;
     
-    padding: 14px 16px;
-    color: white;
+    color: rgb(25, 172, 246);
     text-decoration: none;
     
   }
 
+  .logo {
+    display: none;
+  }
+
   body {
-    padding-top: 150px;
+    padding-top: 5em;
   }
   
   #main-menu {

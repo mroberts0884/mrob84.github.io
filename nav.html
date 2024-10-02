@@ -10,36 +10,42 @@
   
 </head>
 <body>
-  <header class="masthead">
-    
-    
+  
       <nav>
-
+        <div class="logo">Matt Roberts</div>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
           <i class="fa fa-bars"></i>
         </label>
-            <div class="logo">Matt Roberts</div>
         <ul id="main-menu">
             
             <li class="nav-item" id="home">
-              <a href="/index.html">Home</a>
+              <a class="nav_link" href="/index.html">Home</a>
               </li>
             <li class="nav-item" id="about">
-              <a href="/about-me.html">About</a>
+              <a class="nav_link" href="/about-me.html">About</a>
               </li>
             <li class="nav-item" id="services">
-              <a href="/work.html">Work</a>
+              <a class="nav_link" href="/work.html">Work</a>
               </li>
             <li class="nav-item" id="contact">
-              <a href="/contact.html">Contact</a>
+              <a class="nav_link" href="/contact.html">Contact</a>
             </li>
         </ul>
       </nav>
     
     
-  </header>
+ 
   
-  
+  <script>
+    const navLinkEls = document.querySelectorAll('.nav_link')
+
+    navLinkEls.forEach(navLinkEl => {
+      navLinkEl.addEventListener('click', () => {
+        document.querySelector('.active')?.classList.remove('active')
+        navLinkEl.classList.add('active')
+      })
+    })
+  </script>
 </body>
 </html>
