@@ -54,8 +54,26 @@ h1{
   box-sizing: border-box;
 }
 
+.contactButton {
+  border-radius: 50px;
+  background-color: #578cad;
+  font-size: medium;
+  font-family: sans-serif;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.titleContact, .titleWork {
+  padding-top: 3.5em;
+}
+
 /* contact page */
 
+
+
+.container {
+  margin: 2em;
+}
 
 #contact-form{
   display: flex;
@@ -80,7 +98,7 @@ h1{
 .main-info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  
 }
 
 #contact-form input[type="text"],
@@ -94,7 +112,7 @@ h1{
 }
 
 .btn-primary {
-  background-color: #098be1; 
+  background-color: #578cad; 
   border: 1px solid rgb(9, 54, 232);
   color: white;
   padding: 15px 32px;
@@ -122,12 +140,12 @@ h1{
 
 nav ul li a:hover {
   font-weight: bold;
-  color: #177ebe;
+  color: #578cad;
 }
 
 .active {
 
-color: #177ebe
+color: #578cad
 }
 
 nav {
@@ -140,9 +158,12 @@ nav {
   
   }
 
+/* Work */
+
 .work {
   display: grid;
   column-gap: 0.75em;
+  
 }
 
 .work img {
@@ -207,7 +228,17 @@ nav {
 
   body {
   padding-top: 20%;
+
 }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /*work*/
 
   .work {
@@ -221,27 +252,29 @@ nav {
   /* about */
 
   #title {
-    color: rgb(255, 255, 255);
+    color: rgb(67, 89, 121);
   }
 
   .about {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 2.5em;
   }
 
   #left-img {
-    max-width: 50%;
+    max-width: 25%;
     height: auto;
+
   }
 
   #text-right {
     max-width: 100%;
-    margin-left: 30px;
+    margin-left: 1.8em;
     font-size: 2rem;
   }
 
-
+  /* contact */
 
   #contact-me {
     color: white;
