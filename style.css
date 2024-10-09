@@ -63,8 +63,9 @@ h1{
   cursor: pointer;
 }
 
-.titleContact, .titleWork {
+.titleContact, .titleWork, #title {
   padding-top: 3.5em;
+  color: rgb(67, 89, 121);
 }
 
 /* contact page */
@@ -162,8 +163,8 @@ nav {
 
 .work {
   display: grid;
-  column-gap: 0.75em;
-  
+  column-gap: 2em;
+  margin: 3em;
 }
 
 .work img {
@@ -182,6 +183,11 @@ nav {
 
 .intro1 {
   text-align: center;
+
+}
+
+.buttonContact{
+  width: 50%;
 }
 
 
@@ -251,10 +257,7 @@ nav {
   }
   /* about */
 
-  #title {
-    color: rgb(67, 89, 121);
-  }
-
+  
   .about {
     display: flex;
     flex-direction: row;
@@ -348,7 +351,8 @@ nav {
   }
 
   .logo {
-    display: none;
+    display: block;
+    color: rgb(25, 172, 246);
   }
 
   body {
@@ -376,7 +380,7 @@ nav {
 
   #text-right {
     max-width: 100%;
-    margin: 25px;
+    margin: 1em;
     font-size: 1em;
     color: rgb(255, 255, 255);
   }
