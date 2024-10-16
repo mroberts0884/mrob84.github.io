@@ -61,6 +61,7 @@ h1{
   font-family: sans-serif;
   padding: 0.5em;
   cursor: pointer;
+  color: white;
 }
 
 .titleContact, .titleWork, #title {
@@ -158,6 +159,8 @@ nav {
   align-items: center;
   
   }
+
+.logo a {text-decoration: none;}
 
 /* Work */
 
